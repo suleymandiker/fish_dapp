@@ -1,0 +1,198 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px 600px 100px 200px 100px 250px 250px 500px 500px 500px 100px 100px;
+    grid-template-areas: 
+    "nfclublogo nfclublogo  nav_left  nav_left  nav_left  logo  nav_right   nav_right  nav_right nav_right wallet  wallet"
+    "ship ship ship ship ship ship ship video video video video day_and_dark"
+    "video_alt video_alt video_alt video_alt video_alt video_alt video_alt video_alt video_alt video_alt social_media social_media"
+    "slider slider slider slider slider slider slider slider slider slider slider slider"
+    "features features features features features features features features features features features features"
+    "f_royalties f_royalties f_royalties f_royalties f_royalties f_royalties f_investment f_investment f_lottery f_lottery f_lottery f_lottery"
+    "f_metaverse f_metaverse f_metaverse f_metaverse f_community_dao f_community_dao f_community_dao f_community_dao f_nfclub f_nfclub f_nfclub f_nfclub"
+    "tri_token tri_token tri_token tri_token tri_token tri_token tri_token tri_token tri_token tri_token tri_token tri_token"
+    "roadmap roadmap roadmap roadmap roadmap roadmap roadmap roadmap roadmap roadmap roadmap roadmap"
+    "roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt roadmap_alt"
+    "nfclub nfclub nfclub nfclub nfclub nfclub nfclub nfclub nfclub nfclub nfclub nfclub"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+   
+}
+
+
+.nfclublogo {
+    grid-area: nfclublogo;
+    grid-column: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.logo {
+    grid-area: logo;
+    grid-column: 6/8;
+    justify-content: center;
+    align-content: center;
+
+    
+}
+
+.nav_left {
+    grid-area: nav_left;
+    grid-column: 3/6;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav_right {
+    grid-area: nav_right;
+    grid-column: 8/12;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.wallet {
+    grid-area: wallet;
+    grid-column: 12/-1;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.ship {
+    grid-area: ship;
+    grid-column: 1/7;
+}
+
+
+.video {
+    grid-area: video;
+    grid-column: 7/12;
+}
+
+.day_and_dark {
+    grid-area: day_and_dark;
+    grid-column: 12/-1;
+    align-self: center;
+    justify-self: end;
+}
+
+.video_alt {
+    grid-area: video_alt;
+    grid-column: 1/11;
+}
+
+.social_media {
+    grid-area: social_media;
+    grid-column: 11/-1;
+    align-self: center;
+    justify-self: end;
+
+}
+
+.slider {
+    grid-area: slider;
+    grid-column: 1/-1;
+ 
+
+}
+
+.features {
+    grid-area: features;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.f_royalties {
+    grid-area: f_royalties;
+    grid-column: 2/5;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.f_investment {
+    grid-area: f_investment;
+    grid-column: 5/9;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.f_lottery {
+    grid-area: f_lottery;
+    grid-column: 9/12;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+
+.f_metaverse {
+    grid-area: f_metaverse;
+    grid-column: 2/5;
+    align-self: center;
+    justify-self: center;
+    padding-top: 100px;
+  
+}
+
+.f_community_dao {
+    grid-area: f_community_dao;
+    grid-column: 5/9;
+    align-self: center;
+    justify-self: center;
+    padding-top: 100px;
+}
+
+.f_nfclub {
+    grid-area: f_nfclub;
+    grid-column: 9/12;
+    align-self: center;
+    justify-self: center;
+    padding-top: 100px;
+}
+
+
+
+.tri_token {
+    grid-area: tri_token;
+    grid-column: 1/-1;
+}
+
+.roadmap {
+    grid-area: roadmap;
+    grid-column: 1/-1;
+}
+
+.roadmap_alt {
+    grid-area: roadmap_alt;
+    grid-column: 1/-1;
+}
+
+.nfclub {
+    grid-area: nfclub; 
+    grid-column: 1/-1;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column: 1/-1;
+}
+
+ 
+
+ #mint {
+     display: none;
+}
+
+#home:hover ~ #mint {
+    display: none;
+}
+
+
+

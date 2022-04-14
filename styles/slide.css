@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    background-color: hsl(201, 27%, 10%);
+    color: white;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  :root {
+    --animate: 2.5s;
+    --pause: 3s;
+    --totall-duration: calc(var(--animate) * 2 + var(--pause) * 2);
+  }
+
+
+.container {
+    background-color: white;
+    width: 1200px;
+    height: 120px;
+    overflow: hidden;
+    
+  
+}
+
+.slider-wrapper {
+    width: 1200px;
+    display: flex;
+    position: relative;
+    
+    
+}
+
+.image {
+    display: flex;
+    width: 180px;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .image-slide {
+      animation: image-slide;
+  }
+ 
+  .hero-image-1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: slide-out-image-1 var(--totall-duration) 10s
+      cubic-bezier(1,1,1,1) infinite;
+  }
+  /* start + pause + start + pause = totall */
+  /* 2.5s + 3s + 2.5s + 3s = 11s*/
+  @keyframes slide-out-image-1 {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(250%);
+    }
+    50% {
+      transform: translateX(500%);
+    }
+    75% {
+      transform: translateX(550%);
+    }
+    100% {
+      transform: translateX(600%);
+    }
+  }
+  
+  .hero-image-2 {
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation: slide-in-image-2 var(--totall-duration) 3s
+      cubic-bezier(0.54, 0.12, 0.44, 1) infinite;
+  }
+  
+  /* start + pause + start + pause = totall */
+  /* 2.5s + 3s + 2.5s + 3s = 11s*/
+  @keyframes slide-in-image-2 {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    75% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+
+
+  .hero-image-3 {
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation: slide-in-image-3 var(--totall-duration) 20s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* start + pause + start + pause = totall */
+  /* 2.5s + 3s + 2.5s + 3s = 11s*/
+  @keyframes slide-in-image-3 {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+

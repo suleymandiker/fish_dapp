@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+
+    @font-face {
+        font-family: Oswald;
+        src: url(/fonts/Oswald/Oswald-Bold.ttf)
+        format("truetype")
+    }
+    @font-face {
+        font-family: Candara;
+        src: url(/fonts/Candara/Candara.ttf)
+        format("truetype")
+    }
+
+
+    h1 {
+        @apply mb-6 text-5xl font-headline text-mainColor;
+    }
+
+    h2 {
+        @apply mb-3 text-3xl font-headline text-mainColor;
+    }
+
+    h3 {
+        @apply mb-2 md:mb-2 text-xl text-2xl font-headline text-mainColor;
+    }
+
+    p {
+        @apply text-lg;
+    }
+
+    li {
+        @apply mb-4 text-lg  md:text-xl;
+    }
+}
+
+
+@layer  components {
+    
+
+
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+}
